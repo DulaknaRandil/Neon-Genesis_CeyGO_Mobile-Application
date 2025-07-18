@@ -61,8 +61,7 @@ class _SearchedPlaceScreenState extends State<SearchedPlaceScreen> {
 
   Future<String?> fetchPlaceImage(String placeName) async {
     try {
-      final apiKey =
-          'AIzaSyBhOl3Xwupt1TJ4ZhyqGSbnDkZcowsh5D4'; // Replace with your API key
+      final apiKey = ''; // Replace with your API key
       final response = await http.get(Uri.parse(
           'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=$placeName&inputtype=textquery&fields=photos&key=$apiKey'));
 
